@@ -1,0 +1,23 @@
+{
+  "risingArjunApp": {
+    "centerHead": {
+      "home": {
+        "title": "CenterHeads",
+        "createLabel": "नया Center Head बनाएँ",
+        "createOrEditLabel": "Center Head बनाएँ या संपादित करें",
+        "notFound": "No Center Head found"
+      },
+      "created": "एक नया Center Head [identifier: {{ param }}] तैयार है",
+      "updated": "एक Center Head [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Center Head [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Center Head [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Center Head"
+      },
+      "centerhead": "Centerhead",
+      "center": "Center"
+    }
+  }
+}

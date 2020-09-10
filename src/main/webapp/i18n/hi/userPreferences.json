@@ -1,0 +1,23 @@
+{
+  "risingArjunApp": {
+    "userPreferences": {
+      "home": {
+        "title": "UserPreferences",
+        "createLabel": "नया User Preferences बनाएँ",
+        "createOrEditLabel": "User Preferences बनाएँ या संपादित करें",
+        "notFound": "No User Preferences found"
+      },
+      "created": "एक नया User Preferences [identifier: {{ param }}] तैयार है",
+      "updated": "एक User Preferences [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "User Preferences [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "User Preferences [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "User Preferences"
+      },
+      "theme": "Theme",
+      "user": "User"
+    }
+  }
+}

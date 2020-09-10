@@ -1,0 +1,30 @@
+{
+  "risingArjunApp": {
+    "employees": {
+      "home": {
+        "title": "Employees",
+        "createLabel": "Crear nuevo Employees",
+        "createOrEditLabel": "Crear o editar Employees",
+        "notFound": "No Employees found"
+      },
+      "created": "Un nuevo Employees ha sido creado con el identificador {{ param }}",
+      "updated": "Un Employees ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Employees ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Employees {{ id }}?"
+      },
+      "detail": {
+        "title": "Employees"
+      },
+      "employeeId": "Employee Id",
+      "jobNature": "Job Nature",
+      "bgc": "Bgc",
+      "resume": "Resume",
+      "pan": "Pan",
+      "accountNo": "Account No",
+      "bank": "Bank",
+      "ifsc": "Ifsc",
+      "user": "User"
+    }
+  }
+}

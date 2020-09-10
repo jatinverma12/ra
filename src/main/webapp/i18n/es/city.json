@@ -1,0 +1,10 @@
+{
+  "risingArjunApp": {
+    "City": {
+      "null": "",
+      "GURGAON": "GURGAON",
+      "DELHI": "DELHI",
+      "DEHRADUN": "DEHRADUN"
+    }
+  }
+}

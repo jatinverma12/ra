@@ -1,0 +1,30 @@
+{
+  "risingArjunApp": {
+    "studentFees": {
+      "home": {
+        "title": "StudentFees",
+        "createLabel": "नया Student Fees बनाएँ",
+        "createOrEditLabel": "Student Fees बनाएँ या संपादित करें",
+        "notFound": "No Student Fees found"
+      },
+      "created": "एक नया Student Fees [identifier: {{ param }}] तैयार है",
+      "updated": "एक Student Fees [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Student Fees [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Student Fees [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Student Fees"
+      },
+      "fee": "Fee",
+      "feeCorrection": "Fee Correction",
+      "month": "Month",
+      "feeStatus": "Fee Status",
+      "remarks": "Remarks",
+      "registrationno": "Registrationno",
+      "subject": "Subject",
+      "session": "Session",
+      "teacher": "Teacher"
+    }
+  }
+}

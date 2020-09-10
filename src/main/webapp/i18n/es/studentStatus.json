@@ -1,0 +1,10 @@
+{
+  "risingArjunApp": {
+    "StudentStatus": {
+      "null": "",
+      "GRADUATED": "GRADUATED",
+      "JOINED": "JOINED",
+      "LEFT": "LEFT"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+    <property name="now" value="now()" dbms="mysql"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql, mariadb"/>
+    <property name="clobType" value="clob" dbms="h2"/>
+    <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
+    <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200826015129_added_entity_Blog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200826015130_added_entity_Entry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200826015131_added_entity_Tag.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062403_added_entity_Jhiauthority.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062404_added_entity_Features.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062405_added_entity_RoleAccess.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062406_added_entity_UserDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062407_added_entity_UserPreferences.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062408_added_entity_Courses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062409_added_entity_Students.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062410_added_entity_Subjects.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062411_added_entity_AcademicSessions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062412_added_entity_StudentsSubjects.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062413_added_entity_SubjectsBaseFee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062414_added_entity_Discounts.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062415_added_entity_Scholarships.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062416_added_entity_StudentFees.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062417_added_entity_Employees.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062418_added_entity_Centers.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062419_added_entity_CenterHead.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062420_added_entity_Teachers.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062421_added_entity_TeachersShare.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062422_added_entity_SalariesPayment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062423_added_entity_Expenses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062424_added_entity_Chapters.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062425_added_entity_Questions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062426_added_entity_StudentScore.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200826015129_added_entity_constraints_Blog.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200826015130_added_entity_constraints_Entry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062405_added_entity_constraints_RoleAccess.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062406_added_entity_constraints_UserDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062407_added_entity_constraints_UserPreferences.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062409_added_entity_constraints_Students.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062412_added_entity_constraints_StudentsSubjects.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062413_added_entity_constraints_SubjectsBaseFee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062414_added_entity_constraints_Discounts.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062415_added_entity_constraints_Scholarships.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062416_added_entity_constraints_StudentFees.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062417_added_entity_constraints_Employees.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062419_added_entity_constraints_CenterHead.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062420_added_entity_constraints_Teachers.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062421_added_entity_constraints_TeachersShare.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062422_added_entity_constraints_SalariesPayment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062423_added_entity_constraints_Expenses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062424_added_entity_constraints_Chapters.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062425_added_entity_constraints_Questions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200910062426_added_entity_constraints_StudentScore.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

@@ -1,0 +1,30 @@
+{
+  "risingArjunApp": {
+    "employees": {
+      "home": {
+        "title": "Employees",
+        "createLabel": "नया Employees बनाएँ",
+        "createOrEditLabel": "Employees बनाएँ या संपादित करें",
+        "notFound": "No Employees found"
+      },
+      "created": "एक नया Employees [identifier: {{ param }}] तैयार है",
+      "updated": "एक Employees [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Employees [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Employees [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Employees"
+      },
+      "employeeId": "Employee Id",
+      "jobNature": "Job Nature",
+      "bgc": "Bgc",
+      "resume": "Resume",
+      "pan": "Pan",
+      "accountNo": "Account No",
+      "bank": "Bank",
+      "ifsc": "Ifsc",
+      "user": "User"
+    }
+  }
+}

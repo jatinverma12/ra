@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity CenterHead.
+    -->
+    <changeSet id="20200910062419-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="centerhead_id"
+                                 baseTableName="center_head"
+                                 constraintName="fk_center_head_centerhead_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="employees"/>
+
+        <addForeignKeyConstraint baseColumnNames="center_head_id"
+                                 baseTableName="center_head_center"
+                                 constraintName="fk_center_head_center_center_head_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="center_head"/>
+
+        <addForeignKeyConstraint baseColumnNames="center_id"
+                                 baseTableName="center_head_center"
+                                 constraintName="fk_center_head_center_center_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="centers"/>
+        
+    </changeSet>
+</databaseChangeLog>

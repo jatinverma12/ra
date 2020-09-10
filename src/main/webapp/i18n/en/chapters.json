@@ -1,0 +1,25 @@
+{
+  "risingArjunApp": {
+    "chapters": {
+      "home": {
+        "title": "Chapters",
+        "createLabel": "Create a new Chapters",
+        "createOrEditLabel": "Create or edit a Chapters",
+        "notFound": "No Chapters found"
+      },
+      "created": "A new Chapters is created with identifier {{ param }}",
+      "updated": "A Chapters is updated with identifier {{ param }}",
+      "deleted": "A Chapters is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Chapters {{ id }}?"
+      },
+      "detail": {
+        "title": "Chapters"
+      },
+      "chapterId": "Chapter Id",
+      "chapterTitle": "Chapter Title",
+      "course": "Course",
+      "subject": "Subject"
+    }
+  }
+}

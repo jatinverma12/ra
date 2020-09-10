@@ -1,0 +1,23 @@
+{
+  "risingArjunApp": {
+    "academicSessions": {
+      "home": {
+        "title": "AcademicSessions",
+        "createLabel": "नया Academic Sessions बनाएँ",
+        "createOrEditLabel": "Academic Sessions बनाएँ या संपादित करें",
+        "notFound": "No Academic Sessions found"
+      },
+      "created": "एक नया Academic Sessions [identifier: {{ param }}] तैयार है",
+      "updated": "एक Academic Sessions [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Academic Sessions [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Academic Sessions [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Academic Sessions"
+      },
+      "acadSessionId": "Acad Session Id",
+      "acadSession": "Acad Session"
+    }
+  }
+}

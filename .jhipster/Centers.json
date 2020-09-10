@@ -1,0 +1,65 @@
+{
+    "name": "Centers",
+    "fields": [
+        {
+            "fieldName": "centerCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "centerTitle",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "streetNo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "City",
+            "fieldValues": "GURGAON,DELHI,DEHRADUN",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "State",
+            "fieldValues": "DELHI,HARYANA,UTTRAKHAND,MADHYAPRADESH",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "pincode",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "centerHead",
+            "otherEntityRelationshipName": "center",
+            "relationshipName": "centerhead",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200910062418",
+    "entityTableName": "centers",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

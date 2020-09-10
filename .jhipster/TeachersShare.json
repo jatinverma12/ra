@@ -1,0 +1,81 @@
+{
+    "name": "TeachersShare",
+    "fields": [
+        {
+            "fieldName": "share",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "max"
+            ],
+            "fieldValidateRulesMax": 100
+        },
+        {
+            "fieldName": "plannedClasses",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "actualClasses",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "shareCorrection",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "month",
+            "fieldType": "Month",
+            "fieldValues": "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC"
+        },
+        {
+            "fieldName": "remarks",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "employees",
+            "otherEntityRelationshipName": "teachersShare",
+            "relationshipName": "teacher",
+            "otherEntityField": "employeeId"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "subjects",
+            "otherEntityRelationshipName": "teachersShare",
+            "relationshipName": "subject",
+            "otherEntityField": "subjectTitle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "courses",
+            "otherEntityRelationshipName": "teachersShare",
+            "relationshipName": "course",
+            "otherEntityField": "course"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "academicSessions",
+            "otherEntityRelationshipName": "teachersShare",
+            "relationshipName": "session",
+            "otherEntityField": "acadSessionId"
+        }
+    ],
+    "changelogDate": "20200910062421",
+    "entityTableName": "teachers_share",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

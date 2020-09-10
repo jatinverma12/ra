@@ -1,0 +1,25 @@
+{
+  "risingArjunApp": {
+    "subjects": {
+      "home": {
+        "title": "Subjects",
+        "createLabel": "नया Subjects बनाएँ",
+        "createOrEditLabel": "Subjects बनाएँ या संपादित करें",
+        "notFound": "No Subjects found"
+      },
+      "created": "एक नया Subjects [identifier: {{ param }}] तैयार है",
+      "updated": "एक Subjects [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Subjects [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Subjects [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Subjects"
+      },
+      "subjectCode": "Subject Code",
+      "subjectTitle": "Subject Title",
+      "studentsubject": "Studentsubject",
+      "teachers": "Teachers"
+    }
+  }
+}

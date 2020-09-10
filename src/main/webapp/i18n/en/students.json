@@ -1,0 +1,31 @@
+{
+  "risingArjunApp": {
+    "students": {
+      "home": {
+        "title": "Students",
+        "createLabel": "Create a new Students",
+        "createOrEditLabel": "Create or edit a Students",
+        "notFound": "No Students found"
+      },
+      "created": "A new Students is created with identifier {{ param }}",
+      "updated": "A Students is updated with identifier {{ param }}",
+      "deleted": "A Students is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Students {{ id }}?"
+      },
+      "detail": {
+        "title": "Students"
+      },
+      "studentRegId": "Student Reg Id",
+      "registrationForm": "Registration Form",
+      "parentMobNo1": "Parent Mob No 1",
+      "parentMobNo2": "Parent Mob No 2",
+      "parentEmailId": "Parent Email Id",
+      "studentStatus": "Student Status",
+      "leavingReason": "Leaving Reason",
+      "infoSource": "Info Source",
+      "user": "User",
+      "course": "Course"
+    }
+  }
+}

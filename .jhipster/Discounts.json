@@ -1,0 +1,72 @@
+{
+    "name": "Discounts",
+    "fields": [
+        {
+            "fieldName": "subject2",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "subject3",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "subject4",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "subject5",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "subject6",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "subject7",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "subject8",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "quarterly",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "halfYearly",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "annually",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "sibling",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "referral",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "academicSessions",
+            "otherEntityRelationshipName": "discounts",
+            "relationshipName": "session",
+            "otherEntityField": "acadSession"
+        }
+    ],
+    "changelogDate": "20200910062414",
+    "entityTableName": "discounts",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

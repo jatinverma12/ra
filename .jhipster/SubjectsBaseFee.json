@@ -1,0 +1,35 @@
+{
+    "name": "SubjectsBaseFee",
+    "fields": [
+        {
+            "fieldName": "baseFee",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "courses",
+            "otherEntityRelationshipName": "subjectsBaseFee",
+            "relationshipName": "course",
+            "otherEntityField": "course"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "academicSessions",
+            "otherEntityRelationshipName": "subjectsBaseFee",
+            "relationshipName": "session",
+            "otherEntityField": "acadSession"
+        }
+    ],
+    "changelogDate": "20200910062413",
+    "entityTableName": "subjects_base_fee",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

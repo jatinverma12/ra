@@ -1,0 +1,56 @@
+{
+    "name": "StudentsSubjects",
+    "fields": [
+        {
+            "fieldName": "month",
+            "fieldType": "Month",
+            "fieldValues": "JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "students",
+            "otherEntityRelationshipName": "studentsSubjects",
+            "relationshipName": "registrationno",
+            "otherEntityField": "studentRegId",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "academicSessions",
+            "otherEntityRelationshipName": "studentsSubjects",
+            "relationshipName": "session",
+            "otherEntityField": "acadSession"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "subjects",
+            "otherEntityRelationshipName": "studentsubject",
+            "relationshipName": "subjects",
+            "otherEntityField": "subjectTitle",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "courses",
+            "otherEntityRelationshipName": "studentsubjects",
+            "relationshipName": "course",
+            "otherEntityField": "course",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200910062412",
+    "entityTableName": "students_subjects",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

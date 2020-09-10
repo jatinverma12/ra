@@ -1,0 +1,24 @@
+{
+  "risingArjunApp": {
+    "teachers": {
+      "home": {
+        "title": "Teachers",
+        "createLabel": "नया Teachers बनाएँ",
+        "createOrEditLabel": "Teachers बनाएँ या संपादित करें",
+        "notFound": "No Teachers found"
+      },
+      "created": "एक नया Teachers [identifier: {{ param }}] तैयार है",
+      "updated": "एक Teachers [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Teachers [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Teachers [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Teachers"
+      },
+      "teacher": "Teacher",
+      "subjects": "Subjects",
+      "courses": "Courses"
+    }
+  }
+}

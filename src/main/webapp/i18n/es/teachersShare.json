@@ -1,0 +1,31 @@
+{
+  "risingArjunApp": {
+    "teachersShare": {
+      "home": {
+        "title": "Teachers Shares",
+        "createLabel": "Crear nuevo Teachers Share",
+        "createOrEditLabel": "Crear o editar Teachers Share",
+        "notFound": "No Teachers Share found"
+      },
+      "created": "Un nuevo Teachers Share ha sido creado con el identificador {{ param }}",
+      "updated": "Un Teachers Share ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Teachers Share ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Teachers Share {{ id }}?"
+      },
+      "detail": {
+        "title": "Teachers Share"
+      },
+      "share": "Share",
+      "plannedClasses": "Planned Classes",
+      "actualClasses": "Actual Classes",
+      "shareCorrection": "Share Correction",
+      "month": "Month",
+      "remarks": "Remarks",
+      "teacher": "Teacher",
+      "subject": "Subject",
+      "course": "Course",
+      "session": "Session"
+    }
+  }
+}

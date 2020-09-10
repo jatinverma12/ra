@@ -1,0 +1,34 @@
+{
+  "risingArjunApp": {
+    "expenses": {
+      "home": {
+        "title": "Expenses",
+        "createLabel": "Crear nuevo Expenses",
+        "createOrEditLabel": "Crear o editar Expenses",
+        "notFound": "No Expenses found"
+      },
+      "created": "Un nuevo Expenses ha sido creado con el identificador {{ param }}",
+      "updated": "Un Expenses ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Expenses ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Expenses {{ id }}?"
+      },
+      "detail": {
+        "title": "Expenses"
+      },
+      "item": "Item",
+      "quantity": "Quantity",
+      "rate": "Rate",
+      "laborCost": "Labor Cost",
+      "otherExpense": "Other Expense",
+      "total": "Total",
+      "date": "Date",
+      "transactionId": "Transaction Id",
+      "expenseMode": "Expense Mode",
+      "type": "Type",
+      "bill": "Bill",
+      "remarks": "Remarks",
+      "incurredBy": "Incurred By"
+    }
+  }
+}

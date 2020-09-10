@@ -1,0 +1,93 @@
+{
+    "name": "Questions",
+    "fields": [
+        {
+            "fieldName": "question",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "diagram",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "option1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "option2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "option3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "option4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "answer",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "maxMarks",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "negativeMarks",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "level",
+            "fieldType": "QuestionLevel",
+            "fieldValues": "BEGINNERS,MODERATE,ADVANCE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "courses",
+            "otherEntityRelationshipName": "questions",
+            "relationshipName": "course",
+            "otherEntityField": "course"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "subjects",
+            "otherEntityRelationshipName": "questions",
+            "relationshipName": "subject",
+            "otherEntityField": "subjectTitle"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "chapters",
+            "otherEntityRelationshipName": "questions",
+            "relationshipName": "chapter",
+            "otherEntityField": "chapterTitle"
+        }
+    ],
+    "changelogDate": "20200910062425",
+    "entityTableName": "questions",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

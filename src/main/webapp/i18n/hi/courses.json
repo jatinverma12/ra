@@ -1,0 +1,26 @@
+{
+  "risingArjunApp": {
+    "courses": {
+      "home": {
+        "title": "Courses",
+        "createLabel": "नया Courses बनाएँ",
+        "createOrEditLabel": "Courses बनाएँ या संपादित करें",
+        "notFound": "No Courses found"
+      },
+      "created": "एक नया Courses [identifier: {{ param }}] तैयार है",
+      "updated": "एक Courses [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Courses [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Courses [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Courses"
+      },
+      "courseId": "Course Id",
+      "course": "Course",
+      "students": "Students",
+      "studentsubjects": "Studentsubjects",
+      "teachers": "Teachers"
+    }
+  }
+}

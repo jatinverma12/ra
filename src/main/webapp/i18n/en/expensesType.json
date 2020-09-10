@@ -1,0 +1,10 @@
+{
+  "risingArjunApp": {
+    "ExpensesType": {
+      "null": "",
+      "OPERATING": "OPERATING",
+      "MARKETING": "MARKETING",
+      "FIXASSET": "FIXASSET"
+    }
+  }
+}

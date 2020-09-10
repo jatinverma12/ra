@@ -1,0 +1,26 @@
+{
+  "risingArjunApp": {
+    "studentScore": {
+      "home": {
+        "title": "Student Scores",
+        "createLabel": "Crear nuevo Student Score",
+        "createOrEditLabel": "Crear o editar Student Score",
+        "notFound": "No Student Score found"
+      },
+      "created": "Un nuevo Student Score ha sido creado con el identificador {{ param }}",
+      "updated": "Un Student Score ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Student Score ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Student Score {{ id }}?"
+      },
+      "detail": {
+        "title": "Student Score"
+      },
+      "answer": "Answer",
+      "score": "Score",
+      "date": "Date",
+      "student": "Student",
+      "questionId": "Question Id"
+    }
+  }
+}

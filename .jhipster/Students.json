@@ -1,0 +1,77 @@
+{
+    "name": "Students",
+    "fields": [
+        {
+            "fieldName": "studentRegId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "registrationForm",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "parentMobNo1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parentMobNo2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parentEmailId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "pattern"
+            ],
+            "fieldValidateRulesPattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+        },
+        {
+            "fieldName": "studentStatus",
+            "fieldType": "StudentStatus",
+            "fieldValues": "GRADUATED,JOINED,LEFT"
+        },
+        {
+            "fieldName": "leavingReason",
+            "fieldType": "LeavingReasons",
+            "fieldValues": "DISTANCEFACTOR,UNHAPPYPHYSICS,UNHAPPYMATHS,UNHAPPYBIO,UNHAPPYCHEMISTRY,UNHAPPYMANAGEMENT,HIGHFEES,CLASSESOVERLAP,COURSECOMPLETED,BREAKEXAM,BREAKHOLIDAY,PERSONALREASON"
+        },
+        {
+            "fieldName": "infoSource",
+            "fieldType": "InfoSources",
+            "fieldValues": "LOCATIONDIRECTLY,FRIENDS,BANNER,INTERNET,PAMPHLET,NEWSPAPER"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "students",
+            "relationshipName": "user",
+            "otherEntityField": "login",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "courses",
+            "otherEntityRelationshipName": "students",
+            "relationshipName": "course",
+            "otherEntityField": "course",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200910062409",
+    "entityTableName": "students",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

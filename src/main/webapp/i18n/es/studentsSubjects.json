@@ -1,0 +1,26 @@
+{
+  "risingArjunApp": {
+    "studentsSubjects": {
+      "home": {
+        "title": "Students Subjects",
+        "createLabel": "Crear nuevo Students Subjects",
+        "createOrEditLabel": "Crear o editar Students Subjects",
+        "notFound": "No Students Subjects found"
+      },
+      "created": "Un nuevo Students Subjects ha sido creado con el identificador {{ param }}",
+      "updated": "Un Students Subjects ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Students Subjects ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Students Subjects {{ id }}?"
+      },
+      "detail": {
+        "title": "Students Subjects"
+      },
+      "month": "Month",
+      "registrationno": "Registrationno",
+      "session": "Session",
+      "subjects": "Subjects",
+      "course": "Course"
+    }
+  }
+}
